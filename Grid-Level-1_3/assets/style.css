@@ -1,0 +1,39 @@
+
+body {
+    height: 100vh;
+    display: grid;
+
+    grid-template-rows: 10% 80% 10%;
+    grid-template-columns: 0.6fr 1fr 1fr;
+
+    gap: 1px;
+}
+
+header {
+    background: blue;
+
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+main {
+    background: red;
+    
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+aside {
+    background-color: green;
+
+    grid-column: 1;
+    grid-row: 2;
+
+}
+
+footer {
+    background: purple;
+
+    grid-column: 1 / 4;
+    grid-row: 3;
+}

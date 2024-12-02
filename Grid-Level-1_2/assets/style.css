@@ -1,0 +1,94 @@
+.first {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.item {
+    min-height: 100px;
+    border-radius: 5px;
+}
+
+.red {
+    grid-column: 1 / 4;
+    background-color: red;
+}
+
+.blue {
+    grid-column: 1;
+    grid-row: 2 / 4;
+
+    background-color: blue;
+}
+
+.green {
+    grid-column: 2 / 4;
+    grid-row: 2;
+
+    background-color: green;
+}
+
+.purple-1,
+.purple-2 {
+    background-color: purple;
+}
+
+.purple-1 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.purple-2 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+
+/* SECCOND */
+
+.seccond {
+    height: 100px;
+    display: grid;
+
+    grid-template-rows: 100px 50px 150px 1fr;
+    grid-template-columns: 40% 20% 15% 25%;
+}
+
+header {
+    background: violet;
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+article {
+    background: brown;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+aside {
+    background-color: chocolate;
+
+    grid-column-start: 4;
+    grid-column-end: 5;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+footer {
+    background: lightblue;
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
